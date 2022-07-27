@@ -2,5 +2,6 @@
 
 ## Install
 
-- Add `https://plugins.annaclemens.io/unofficial` to your custom repositories.
-- Install via `/xlplugins`.
+sort've forked rp toolbox from anna's git, i think I fixed dozesnap
+
+need to set up a repo i guess
