@@ -7,8 +7,12 @@ using ImGuiNET;
 
 namespace RoleplayersToolbox.Tools.Illegal.EmoteSnap {
     internal class EmoteSnapTool : BaseTool, IDisposable {
-        private static class Signatures {
-            internal const string ShouldSnap = "E8 ?? ?? ?? ?? 84 C0 74 46 4C 8D 6D C7";
+        private static class Signatures
+        {
+            // old string for ShouldSnap
+            // internal const string ShouldSnap = "E8 ?? ?? ?? ?? 84 C0 74 46 4C 8D 6D C7"; 
+            internal const string ShouldSnap = "E8 ?? ?? ?? ?? 84 C0 74 44 4C 8D 6D C7";
+
         }
 
         private delegate byte ShouldSnapDelegate(IntPtr a1, IntPtr a2);

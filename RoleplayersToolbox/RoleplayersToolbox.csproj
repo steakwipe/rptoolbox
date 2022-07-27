@@ -28,6 +28,7 @@
     </PropertyGroup>
     <PropertyGroup>
         <Dalamud>$(AppData)\XIVLauncher\addon\Hooks\dev</Dalamud>
+        <BaseOutputPath>C:\Users\steakwipe\AppData\Roaming\XIVLauncher\devPlugins</BaseOutputPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))'">
         <Dalamud>$(DALAMUD_HOME)</Dalamud>
@@ -62,9 +63,9 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Dalamud.ContextMenu" Version="1.1.1"/>
-        <PackageReference Include="DalamudPackager" Version="2.1.7"/>
-        <PackageReference Include="F23.StringSimilarity" Version="5.0.0"/>
-        <PackageReference Include="XivCommon" Version="5.0.1-alpha.1"/>
+        <PackageReference Include="Dalamud.ContextMenu" Version="1.1.1" />
+        <PackageReference Include="DalamudPackager" Version="2.1.7" />
+        <PackageReference Include="F23.StringSimilarity" Version="5.0.0" />
+        <PackageReference Include="XivCommon" Version="5.0.1-alpha.1" />
     </ItemGroup>
 </Project>
