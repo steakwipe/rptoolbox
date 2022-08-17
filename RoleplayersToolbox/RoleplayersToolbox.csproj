@@ -28,7 +28,7 @@
     </PropertyGroup>
     <PropertyGroup>
         <Dalamud>$(AppData)\XIVLauncher\addon\Hooks\dev</Dalamud>
-        <BaseOutputPath></BaseOutputPath>
+        <BaseOutputPath>repo/</BaseOutputPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))'">
         <Dalamud>$(DALAMUD_HOME)</Dalamud>
