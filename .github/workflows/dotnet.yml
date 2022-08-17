@@ -2,21 +2,27 @@ name: .NET
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main, master ]
 
 jobs:
-  build:
+  build_and_test:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v3
     - name: Setup .NET
-      uses: actions/setup-dotnet@v2
+      uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 5.0.x
+    - name: Download latest Dalamud build
+      run: |
+        cd ..
+        curl -O https://goatcorp.github.io/dalamud-distrib/latest.zip
+        mkdir Dalamud
+        unzip latest.zip -d ./Dalamud/bin
+    - uses: actions/checkout@v2
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
