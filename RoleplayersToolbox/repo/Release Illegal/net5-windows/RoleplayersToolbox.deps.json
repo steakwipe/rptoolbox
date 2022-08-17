@@ -1,0 +1,82 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "RoleplayersToolbox/0.3.6": {
+        "dependencies": {
+          "Dalamud.ContextMenu": "1.1.1",
+          "DalamudPackager": "2.1.7",
+          "F23.StringSimilarity": "5.0.0",
+          "XivCommon": "5.0.1-alpha.1"
+        },
+        "runtime": {
+          "RoleplayersToolbox.dll": {}
+        }
+      },
+      "Dalamud.ContextMenu/1.1.1": {
+        "runtime": {
+          "lib/net5.0-windows7.0/Dalamud.ContextMenu.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.0"
+          }
+        }
+      },
+      "DalamudPackager/2.1.7": {},
+      "F23.StringSimilarity/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/F23.StringSimilarity.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "XivCommon/5.0.1-alpha.1": {
+        "runtime": {
+          "lib/net5.0-windows7.0/XivCommon.dll": {
+            "assemblyVersion": "5.0.1.0",
+            "fileVersion": "5.0.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RoleplayersToolbox/0.3.6": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dalamud.ContextMenu/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YwqdkjEQKHW7VGGmWxhBwMpuN9twsLaO6Lm05uQ1LosN2iEKNLrAMB8LlUy8qqCojlrRnhiwece/Z6Ppvfgi6g==",
+      "path": "dalamud.contextmenu/1.1.1",
+      "hashPath": "dalamud.contextmenu.1.1.1.nupkg.sha512"
+    },
+    "DalamudPackager/2.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jnZ/sdInyn07ycuWI+pPOtP/xE3v+c4+jYJfDt36FWnBF9NKqkpzfviJtPl/jGLgbaCmFIXu+Yid0N8GvdKefg==",
+      "path": "dalamudpackager/2.1.7",
+      "hashPath": "dalamudpackager.2.1.7.nupkg.sha512"
+    },
+    "F23.StringSimilarity/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T8o163dR+7VTpZhor0t/TGzbQuBs/CIyt0zFVMmwRkYTjVrOU/nGSKly/hb31SYLgKQZSG+oZMMB4UiFvHpJbw==",
+      "path": "f23.stringsimilarity/5.0.0",
+      "hashPath": "f23.stringsimilarity.5.0.0.nupkg.sha512"
+    },
+    "XivCommon/5.0.1-alpha.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wdu8IY6VTR8OmBGYpqPtRUPo3qr5sF7dyGKwIL3ars9qbqxUzV8lwVVsORjjUQjOoQc6BnhGDuhThubJq2OO9A==",
+      "path": "xivcommon/5.0.1-alpha.1",
+      "hashPath": "xivcommon.5.0.1-alpha.1.nupkg.sha512"
+    }
+  }
+}

@@ -36,9 +36,18 @@
     <PropertyGroup Condition="'$(IsCI)' == 'true'">
         <Dalamud>$(HOME)/dalamud</Dalamud>
     </PropertyGroup>
-    <ItemGroup>
-      <Content Include="bin\Release Illegal\net5-windows\RoleplayersToolbox\RoleplayersToolbox.json" />
-    </ItemGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Official|AnyCPU'">
+      <DebugType>none</DebugType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Illegal|AnyCPU'">
+      <DebugType>none</DebugType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Official|AnyCPU'">
+      <DebugType>none</DebugType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Illegal|AnyCPU'">
+      <DebugType>none</DebugType>
+    </PropertyGroup>
     <ItemGroup>
         <Reference Include="Dalamud">
             <HintPath>$(Dalamud)\Dalamud.dll</HintPath>
@@ -73,8 +82,5 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Properties\" />
-    </ItemGroup>
-    <ItemGroup>
-      <None Include="bin\Release Illegal\net5-windows\RoleplayersToolbox\latest.zip" />
     </ItemGroup>
 </Project>
